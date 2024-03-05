@@ -1,12 +1,24 @@
+from selenium import webdriver
+from selenium.webdriver.support.ui import WebDriverWait
+from selenium.webdriver.common.by import By
+from selenium.webdriver.support import expected_conditions as EC
 from bs4 import BeautifulSoup
-import requests
+
+options = webdriver.FirefoxOptions()
+options.add_argument("--headless")
+driver = webdriver.Firefox(options=options)
+
 
 with open("usernames.txt", "r") as file:
     streaks = dict()
     usernames = file.read().split("\n")
     for username in usernames:
         print(f"Getting streaks for {username}...")
-        html_text = requests.get(f"https://leetcode.com/{username}").text
+        driver.get(f"https://leetcode.com/{username}")
+        element = WebDriverWait(driver, 10).until(
+            EC.presence_of_element_located((By.TAG_NAME, "rect"))
+        )
+        html_text = driver.page_source
         soup = BeautifulSoup(html_text, "lxml")
         rectangles = soup.find_all("rect", class_="cursor-pointer")
 
