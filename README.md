@@ -8,6 +8,9 @@ LeetCode Streak Tracker is a python script designed to help users track their da
 - Add friends to the competition and view their streaks using their username only.
 - Leaderboard to display the longest streaks among friends.
 
+## Screenshot
+<img width="400px" src="https://github.com/AzeemIdrisi/LeetCode-Streak-Tracker/assets/112647789/104ced2e-beb1-4d4f-9619-13581377388f"/>
+
 ## Requirements
 
 - Python
