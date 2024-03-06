@@ -1,15 +1,20 @@
-# LeetCode Streak Tracker
+# [LeetCode Streak Tracker](https://azeemidrisi.github.io/LeetCode-Streak-Tracker/)
 
-LeetCode Streak Tracker is a python script designed to help users track their daily unofficial LeetCode streaks and compete against their friends to maintain the longest streak.
+__LeetCode Streak Tracker__ is a powerful Python script that automates the tracking of daily unofficial LeetCode streaks. It's perfect for those who love a little friendly competition, allowing users to compete against their friends to maintain the longest streak. With automatic updates every day, it's never been easier to stay on top of your game.
+
+**Are you doing 100 days of code challenge?**
+
+Add your LeetCode username to `usernames.txt` and make a pull request to see your streaks on the page.
 
 ## Features
 
 - Track daily non-contest LeetCode streaks for multiple users.
 - Add friends to the competition and view their streaks using their username only.
 - Leaderboard to display the longest streaks among friends.
+- Daily automatic updates.
 
 ## Screenshot
-<img width="400px" src="https://github.com/AzeemIdrisi/LeetCode-Streak-Tracker/assets/112647789/104ced2e-beb1-4d4f-9619-13581377388f"/>
+<img width="1000px" src="https://github.com/AzeemIdrisi/LeetCode-Streak-Tracker/assets/112647789/a3db31e0-4adb-4a05-b360-f262b40d218e"/>
 
 ## Requirements
 
@@ -20,7 +25,7 @@ LeetCode Streak Tracker is a python script designed to help users track their da
 - Firefox
 
 ## Installation
-
+### Local
 1. Clone the repository:
 
    ```sh
@@ -52,6 +57,11 @@ k-Sameer_701
    ```sh
    python main.py
    ```
+
+### GitHub Actions
+1. Fork this repository.
+2. Enable GitHub actions workflow associated with the repository.
+3. Enable GitHub Pages for this repository to see deployed page.
 
 ## Contributing
 
