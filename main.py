@@ -27,14 +27,18 @@ with open("usernames.txt", "r") as file:
 
         streak = 0
         i = len(rectangles) - 1
+
+        # Checking if you have not submitted today's question yet
+        if rectangles[i] == -1:
+            i -= 1
         while rectangles[i] != -1:
             streak += 1
             i -= 1
-        if streak == 0:
-            i = len(rectangles) - 2
-            while rectangles[i] != -1:
-                streak += 1
-                i -= 1
+        # if streak == 0:
+        #     i = len(rectangles) - 2
+        #     while rectangles[i] != -1:
+        #         streak += 1
+        #         i -= 1
         streaks[username] = streak
         print("Done.")
 
@@ -48,3 +52,18 @@ with open("usernames.txt", "r") as file:
 
     for username in streaks:
         print(username[0], ":", username[1])
+
+    # HTML Generation
+    with open("index.html", "w") as file:
+        pass
+    with open("index.html", "a") as f:
+        with open("./templates/body.html", "r") as body:
+            f.write(body.read())
+        for username, streak in streaks:
+            f.write(
+                f'<a href="https://leetcode.com/{username}"><li><span>{username}</span> : {streak}</li></a>'
+            )
+        with open("./templates/footer.html", "r") as footer:
+            f.write(footer.read())
+
+    print("Streaks saved to index.html")
