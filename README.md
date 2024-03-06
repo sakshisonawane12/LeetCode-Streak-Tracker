@@ -25,6 +25,12 @@ Add your LeetCode username to `usernames.txt` and make a pull request to see you
 - Firefox
 
 ## Installation
+
+### GitHub Actions
+1. Fork this repository.
+2. Enable GitHub actions workflow associated with the repository.
+3. Enable GitHub Pages for this repository to see deployed page.
+
 ### Local
 1. Clone the repository:
 
@@ -57,11 +63,6 @@ k-Sameer_701
    ```sh
    python main.py
    ```
-
-### GitHub Actions
-1. Fork this repository.
-2. Enable GitHub actions workflow associated with the repository.
-3. Enable GitHub Pages for this repository to see deployed page.
 
 ## Contributing
 
