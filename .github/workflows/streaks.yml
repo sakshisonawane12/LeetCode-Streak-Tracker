@@ -20,7 +20,7 @@ jobs:
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
-          pip install selenium beautifulsoup4 lxml
+          pip install selenium beautifulsoup4 lxml selenium-stealth
 
       - name: Run script
         run: python main.py

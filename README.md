@@ -41,7 +41,7 @@ Add your LeetCode username to `usernames.txt` and make a pull request to see you
 2. Install the required dependencies:
 
    ```sh
-   pip install selenium beautifulsoup4 lxml
+   pip install selenium beautifulsoup4 lxml selenium-stealth
    ```
 
 3. Download the latest version of Firefox from the [official website](https://www.mozilla.org/en-US/firefox/new/) if you haven't already.

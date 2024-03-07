@@ -3,11 +3,22 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support import expected_conditions as EC
 from bs4 import BeautifulSoup
+from selenium_stealth import stealth
 
-options = webdriver.FirefoxOptions()
+from selenium.webdriver.chrome.options import Options
+
+options = Options()
 options.add_argument("--headless")
-driver = webdriver.Firefox(options=options)
+driver = webdriver.Chrome(options=options)
 
+stealth(
+    driver,
+    languages=["en-US", "en"],
+    vendor="Google Inc.",
+    platform="Win32",
+    webgl_vendor="Intel Inc.",
+    renderer="Intel Iris OpenGL Engine",
+)
 
 with open("usernames.txt", "r") as file:
     streaks = dict()
