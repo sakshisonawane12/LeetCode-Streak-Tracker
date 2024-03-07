@@ -59,10 +59,19 @@ with open("usernames.txt", "r") as file:
     with open("index.html", "a") as f:
         with open("./templates/body.html", "r") as body:
             f.write(body.read())
+
+        rank = 1
         for username, streak in streaks:
-            f.write(
-                f'<a href="https://leetcode.com/{username}"><li><span>{username}</span> : {streak}</li></a>'
-            )
+            if rank <= 3:
+                f.write(
+                    f'<a href="https://leetcode.com/{username}"><li>&#12935{rank}; <span>{username}</span> : {streak}</li></a>'
+                )
+                rank += 1
+            else:
+                f.write(
+                    f'<a href="https://leetcode.com/{username}"><li><span>{username}</span> : {streak}</li></a>'
+                )
+
         with open("./templates/footer.html", "r") as footer:
             f.write(footer.read())
 

@@ -35,7 +35,7 @@ Add your LeetCode username to `usernames.txt` and make a pull request to see you
 1. Clone the repository:
 
    ```sh
-   git clone https://github.com/your-username/leetcode-streak-tracker.git
+   git clone https://github.com/AzeemIdrisi/leetcode-streak-tracker.git
    ```
 
 2. Install the required dependencies:
