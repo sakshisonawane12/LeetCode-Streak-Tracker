@@ -14,7 +14,7 @@ Add your LeetCode username to `usernames.txt` and make a pull request to see you
 - Daily automatic updates.
 
 ## Screenshot
-<img width="1000px" src="https://github.com/AzeemIdrisi/LeetCode-Streak-Tracker/assets/112647789/a3db31e0-4adb-4a05-b360-f262b40d218e"/>
+<a href="https://azeemidrisi.github.io/LeetCode-Streak-Tracker/"><img width="1000px" src="https://github.com/AzeemIdrisi/LeetCode-Streak-Tracker/assets/112647789/a3db31e0-4adb-4a05-b360-f262b40d218e"/></a>
 
 ## Requirements
 
