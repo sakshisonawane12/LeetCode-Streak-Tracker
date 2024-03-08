@@ -25,9 +25,10 @@ jobs:
       - name: Run script
         run: python main.py
 
-      - name: GitHub Pages action
-        uses: peaceiris/actions-gh-pages@v3.9.3
-
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./ # Directory to deploy, usually the root of the repository
+      - name: Commit and push changes
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add .
+          git commit -m "Update results"
+          git push
