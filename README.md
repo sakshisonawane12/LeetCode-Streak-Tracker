@@ -22,7 +22,7 @@ Add your LeetCode username to `usernames.txt` and make a pull request to see you
 - Selenium
 - BeautifulSoup
 - LXML
-- Firefox
+- Chrome Browser
 
 ## Installation
 
@@ -44,10 +44,7 @@ Add your LeetCode username to `usernames.txt` and make a pull request to see you
    pip install selenium beautifulsoup4 lxml selenium-stealth
    ```
 
-3. Download the latest version of Firefox from the [official website](https://www.mozilla.org/en-US/firefox/new/) if you haven't already.
-
-> [!NOTE] 
-> Chrome version does not work properly hence Firefox is recommended
+3. Download the latest version of Google Chrome from the [official website](https://www.google.com/intl/en_in/chrome/) if you haven't already.
 
 4. Create a file `usernames.txt`:
 - Add each user's username in new line (Do not leave any empty lines at last).
